@@ -16,8 +16,8 @@
   strfmt("tel:{}", env.at("PHONE_NUMBER", default: "123-456-7890")),
 )
 
-// ai, security
-#let target-industries = env.at("TARGET_INDUSTRIES", default: "software").split(",")
+// ai, education, security
+#let target-sectors = env.at("TARGET_SECTORS", default: "software").split(",")
 
 #show: resume.with(
   author: author,
@@ -38,15 +38,16 @@
   company: link("https://distributive.network")[Distributive],
   dates: dates-helper(start-date: "May 2023", end-date: "Present"),
 )
-#if target-industries.contains("security") [
+#if target-sectors.contains("security") [
   - Administered the company's JIRA instance, provisioning new projects and implementing custom workflows.
   - Administered the company's Slack workspace, provisioning new channels and organizing channel names for consistency.
 ]
-- Lead the development of a React SPA dashboard as the code owner, overseeing code reviews and architecture changes.
+- Lead the development of a dashboard SPA (React) as the code owner, overseeing code reviews and architecture changes.
 - Improve the integration of the SPA with a OAuth 2.0 Ruby on Rails server.
-- Help fix issues with GitLab CI pipelines to prevent days of developer time from being wasted by flaky pipelines.
-- Implemented preview environments for 3 websites on GitLab by hijacking the job artifacts built from CI.
-- Improve the build times for various React web apps to be 100%-200% faster by switching to better tools (e.g., Vite).
+- Helped implement E2E browser tests for the dashboard SPA, preventing regressions from reaching the development trunk.
+- Helped fix issues with GitLab CI pipelines to prevent days of developer time from being wasted by flaky pipelines.
+- Improved the build times for various React web apps to be 100%-200% faster by switching to better tools (e.g., Vite).
+- Fixed issues with the serialization of `console.log` messages in the SDK not conforming to spec to save network bandwidth and make "printf" debugging easier.
 
 #work(
   title: "Technical Lead",
@@ -68,6 +69,7 @@
 )
 - Developed and maintained a React SPA used by the business team in demos to clients and investors (https://dcp.work).
 - Developed and maintained a Sphinx documentation website for the company's software tools (https://docs.dcp.dev).
+- Added support for stored procedures to in-house ORM library, letting the team avoid repeating currency transaction code.
 
 #work(
   title: "Software Developer Intern",
@@ -86,19 +88,20 @@
 )
 - A command-line application that helps automate common tasks when completing Advent of Code challenges.
 
-#if target-industries.contains("ai") [
+#if target-sectors.contains("ai") [
   #project(
     name: link("https://github.com/bryan-hoang/cmpe-351-data-analytics-group-project")[Predicting Value and Ranking Social Volatility of Cryptocurrency via Twitter],
     role: "Developer",
     dates: dates-helper(start-date: "Jan 2022", end-date: "Mar. 2022"),
   )
   - A Data Analytics course group project investigating the relationship between tweet sentiment and cryptocurrency prices.
+  - The model used for the predictions has a Long Short-Term Memory layer, implemented using Keras.
 ]
 
 == Skills
 
 - *Programming Languages*: JavaScript, Typescript, Python, HTML/CSS, Bash, Ruby, SQL, C\#, C, Java, MATLAB
-- *Technologies*: UNIX, Git, Docker, Node.js, React, NGINX, MySQL, GitLab CI, REST
+- *Technologies*: UNIX, Git, Docker, Node.js, React, Playwright, NGINX, MySQL, GitLab CI, REST
 
 == Education
 
@@ -123,7 +126,7 @@
 )
 - Responsible for the Apple Math Exec and Sci' 21 Exec Wordpress websites.
 
-#if target-industries.contains("security") [
+#if target-sectors.contains("security") [
   #box([
     #extracurriculars(
       activity: "Discord Server Administrator",
@@ -134,9 +137,11 @@
   ])
 ]
 
-#extracurriculars(
-  activity: "Peer Tutor",
-  dates: dates-helper(start-date: "May 2018", end-date: "Apr. 2020"),
-)
-- Guided the learning of undergraduate engineering students in C and MATLAB Programming, Calculus, and Linear Algebra through weekly 1 to 3 hour long individual and group tutoring sessions
-- Led 3-hour review workshops for 30+ students, improving their understanding of the course material being presented.
+#if target-sectors.contains("education") [
+  #extracurriculars(
+    activity: "Peer Tutor",
+    dates: dates-helper(start-date: "May 2018", end-date: "Apr. 2020"),
+  )
+  - Guided the learning of undergraduate engineering students in C and MATLAB Programming, Calculus, and Linear Algebra through weekly 1 to 3 hour long individual and group tutoring sessions
+  - Led 3-hour review workshops for 30+ students, improving their understanding of the course material being presented.
+]
