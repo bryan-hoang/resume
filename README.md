@@ -1,6 +1,7 @@
 # resume
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![CI GitHub Action status](https://github.com/bryan-hoang/resume/actions/workflows/ci.yml/badge.svg)](https://github.com/bryan-hoang/resume/actions/workflows/ci.yml)
 
 My resume, written in Typst!
 
