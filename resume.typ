@@ -79,17 +79,17 @@
 == Projects
 
 #project(
-  name: link("https://github.com/bryan-hoang/aoc-cli-node")[Advent of Code CLI],
+  name: "Advent of Code CLI",
   role: "Creator",
-  dates: "Dec. 2024",
+  url: "github.com/bryan-hoang/aoc-cli-node",
 )
 - A command-line application that helps automate common tasks when completing Advent of Code challenges.
 
 #if target-sectors.contains("ai") [
   #project(
-    name: link("https://github.com/bryan-hoang/cmpe-351-data-analytics-group-project")[Predicting Value and Ranking Social Volatility of Cryptocurrency via Twitter],
+    name: [Twitter tweets $=>$ Cryptocurrency trends?],
     role: "Developer",
-    dates: dates-helper(start-date: "Jan 2022", end-date: "Mar. 2022"),
+    url: "github.com/bryan-hoang/cmpe-351-data-analytics-group-project",
   )
   - A Data Analytics course group project investigating the relationship between tweet sentiment and cryptocurrency prices.
   - The model used for the predictions has a Long Short-Term Memory layer, implemented using Keras.
