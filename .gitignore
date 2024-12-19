@@ -5,3 +5,6 @@
 .env
 
 # End of https://www.toptal.com/developers/gitignore/api/dotenv
+
+# Generated file that's always modified if compilation occurs.
+resume.pdf
