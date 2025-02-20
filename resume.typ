@@ -7,11 +7,8 @@
 #let github = "github.com/bryan-hoang"
 #let linkedin = "linkedin.com/in/bryan-c-hoang"
 #let location = "Kingston, ON"
-// TODO: Make personal website.
-#let personal-site = ""
-#let phone = link(
-  strfmt("tel:{}", env.at("PHONE_NUMBER", default: "123-456-7890")),
-)
+#let personal-site = "bryanhoang.dev"
+#let phone = link(strfmt("tel:{}", env.at("PHONE_NUMBER", default: "123-456-7890")))
 
 // ai, education, security
 #let target-sectors = env.at("TARGET_SECTORS", default: "software").split(",")
@@ -22,7 +19,7 @@
   github: github,
   linkedin: linkedin,
   location: location,
-  personal-site: personal-site,
+  // personal-site: personal-site,
   phone: phone,
   font: "New Computer Modern",
 )
@@ -33,18 +30,17 @@
   title: "Software Developer II",
   location: "Kingston, ON",
   company: link("https://distributive.network")[Distributive],
-  dates: dates-helper(start-date: "May 2023", end-date: "Present"),
+  dates: dates-helper(start-date: "May 2023", end-date: "Sept. 2024"),
 )
 #if target-sectors.contains("security") [
   - Administered the company's JIRA instance, provisioning new projects and implementing custom workflows.
   - Administered the company's Slack workspace, provisioning new channels and organizing channel names for consistency.
 ]
 - Lead the development of a dashboard SPA (React) as the code owner, overseeing code reviews and architecture changes.
-- Improve the integration of the SPA with a OAuth 2.0 Ruby on Rails server.
-- Helped implement E2E browser tests for the dashboard SPA, preventing regressions from reaching the development trunk.
-- Helped fix issues with GitLab CI pipelines to prevent days of developer time from being wasted by flaky pipelines.
+- Implemented E2E browser tests for the dashboard SPA, preventing regressions from reaching the development trunk.
+- Improved the integration of the SPA with a OAuth 2.0 Ruby on Rails server.
 - Improved the build times for various React web apps to be 100%-200% faster by switching to better tools (e.g., Vite).
-- Fixed issues with the serialization of `console.log` messages in the SDK not conforming to spec to save network bandwidth and make "printf" debugging easier.
+- Fixed issues with GitLab CI pipelines to prevent days of developer time from being wasted by flaky pipeline failures.
 
 #work(
   title: "Technical Lead",
@@ -53,10 +49,11 @@
   dates: dates-helper(start-date: "May 2022", end-date: "May 2023"),
 )
 - Coordinate with the CTO and software architects to maintain the Core development team's coding standards.
-- Lead a tiger team to finish the delivery of a React SPA dashboard web app within weeks of the team forming.
-- Lead a team of developers to add i18n and branding support to the dashboard SPA, in collaboration with a research team from Queen's University, that concluded with a survey with 600+ participants.
+- Lead a tiger team that was formed to quickly finish the delivery of a new React SPA dashboard web app.
+- Lead a team of developers to add i18n and branding support to the dashboard SPA in collaboration with a research team from Queen's University; concluded with a survey with 600+ participants.
+- Managed a project to add TypeScript type definitions to a JS SDK in collaboration with a contractor.
 - Mentored and managed internship students.
-// - Participated in a #link("https://www.h1solutions.ca/solutions")[Leader Development Workshop].
+- Participated in a #link("https://www.h1solutions.ca/solutions")[Leader Development Workshop].
 
 #work(
   title: "Software Developer I",
@@ -67,6 +64,7 @@
 - Developed and maintained a React SPA used by the business team in demos to clients and investors (https://dcp.work).
 - Developed and maintained a Sphinx documentation website for the company's software tools (https://docs.dcp.dev).
 - Added support for stored procedures to in-house ORM library, letting the team avoid repeating currency transaction code.
+- Supported QA team by following and managing TestRail test procedures.
 
 #work(
   title: "Software Developer Intern",
@@ -74,7 +72,7 @@
   company: link("https://distributive.network")[Distributive],
   dates: dates-helper(start-date: "June 2019", end-date: "Aug. 2019"),
 )
-- Full-stack development tasks in the Node.js ecosystem.
+- Did front-end development tasks for a dashboard web app that used vanilla HTML/JS/CSS.
 
 == Projects
 
