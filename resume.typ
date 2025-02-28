@@ -41,6 +41,7 @@
 - Improved the integration of the SPA with a OAuth 2.0 Ruby on Rails server.
 - Improved the build times for various React web apps to be 100%-200% faster by switching to better tools (e.g., Vite).
 - Fixed issues with GitLab CI pipelines to prevent days of developer time from being wasted by flaky pipeline failures.
+- Created custom Docker images used in GitLab CI pipelines to speed them up, improving the team's velocity.
 
 #work(
   title: "Technical Lead",
@@ -49,9 +50,10 @@
   dates: dates-helper(start-date: "May 2022", end-date: "May 2023"),
 )
 - Coordinate with the CTO and software architects to maintain the Core development team's coding standards.
+- Managed and triaged issues on team's Kanban board to support agile development.
 - Lead a tiger team that was formed to quickly finish the delivery of a new React SPA dashboard web app.
-- Lead a team of developers to add i18n and branding support to the dashboard SPA in collaboration with a research team from Queen's University; concluded with a survey with 600+ participants.
-- Managed a project to add TypeScript type definitions to a JS SDK in collaboration with a contractor.
+- Coordinated with software development, design, and business teams to add i18n and branding support to the dashboard SPA in collaboration with a research team from Queen's University; concluded with a survey with 600+ participants.
+- Managed a project to add TypeScript type definitions to a JS SDK in collaboration with a remote contractor in a Europe.
 - Mentored and managed internship students.
 - Participated in a #link("https://www.h1solutions.ca/solutions")[Leader Development Workshop].
 
@@ -61,9 +63,10 @@
   company: link("https://distributive.network")[Distributive],
   dates: dates-helper(start-date: "May 2020", end-date: "Aug. 2021"),
 )
+- Helped migrate monolith to even-driven microservices architecture.
 - Developed and maintained a React SPA used by the business team in demos to clients and investors (https://dcp.work).
 - Developed and maintained a Sphinx documentation website for the company's software tools (https://docs.dcp.dev).
-- Added support for stored procedures to in-house ORM library, letting the team avoid repeating currency transaction code.
+- Added stored procedure support to in-house relational database ORM library, avoiding bugs from repeating currency transaction code.
 - Supported QA team by following and managing TestRail test procedures.
 
 #work(
@@ -82,6 +85,7 @@
   url: "github.com/bryan-hoang/aoc-cli-node",
 )
 - A command-line application that helps automate common tasks when completing Advent of Code challenges.
+- Uses GitHub Actions to automate the building and publishing of the package.
 
 #if target-sectors.contains("ai") [
   #project(
@@ -95,8 +99,8 @@
 
 == Skills
 
-- *Programming Languages*: JavaScript, Typescript, Python, HTML/CSS, Bash, Ruby, SQL, C\#, C, Java, MATLAB
-- *Technologies*: UNIX, Git, Docker, Node.js, React, Playwright, NGINX, MySQL, GitLab CI, REST
+- *Programming Languages*: JavaScript, Typescript, Python, HTML/CSS, Bash, Ruby, SQL, Java, C\#, C, MATLAB
+- *Technologies*: UNIX, Git, Docker, Node.js, React, Playwright, NGINX, MySQL, GitLab CI, GitHub Actions, REST
 
 == Education
 
@@ -110,16 +114,10 @@
 == Extracurricular Activities
 
 #extracurriculars(
-  activity: "Undergraduate Teaching Assistant",
-  dates: [#dates-helper(start-date: "Sept. 2019", end-date: "Apr. 2020"), #dates-helper(start-date: "Sept. 2021", end-date: "Apr. 2022")],
-)
-- Facilitated the learning of 90+ students in weekly 1-hour tutorial sessions for first year calculus and linear algebra.
-
-#extracurriculars(
   activity: "Student Executive Webmaster",
   dates: dates-helper(start-date: "Jan. 2021", end-date: "May 2022"),
 )
-- Responsible for the Apple Math Exec and Sci' 21 Exec Wordpress websites.
+- Managed the Apple Math Exec and Sci' 21 Exec Wordpress websites.
 
 #if target-sectors.contains("security") [
   #box([
@@ -133,6 +131,12 @@
 ]
 
 #if target-sectors.contains("education") [
+  #extracurriculars(
+    activity: "Undergraduate Teaching Assistant",
+    dates: [#dates-helper(start-date: "Sept. 2019", end-date: "Apr. 2020"), #dates-helper(start-date: "Sept. 2021", end-date: "Apr. 2022")],
+  )
+  - Facilitated the learning of 90+ students in weekly 1-hour tutorial sessions for first year calculus and linear algebra.
+
   #extracurriculars(
     activity: "Peer Tutor",
     dates: dates-helper(start-date: "May 2018", end-date: "Apr. 2020"),
