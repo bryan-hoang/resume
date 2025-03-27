@@ -22,6 +22,7 @@
   // personal-site: personal-site,
   phone: phone,
   font: "New Computer Modern",
+  author-position: center
 )
 
 == Work Experience
