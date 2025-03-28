@@ -55,9 +55,9 @@ last_name = "Hoang"
 # The custom value is for any additional information you want to add, name it as custom-1, custom-2, etc.
 [personal.info]
 email = "bryan@bryanhoang.dev"
-phone = "+1 613-583-3497"
-linkedin = "bryan-c-hoang"
 github = "bryan-hoang"
+linkedin = "bryan-c-hoang"
+phone = "+1 613-583-3497"
 # gitlab = "bryan-hoang"
 homepage = "bryanhoang.dev"
 

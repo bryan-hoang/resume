@@ -12,7 +12,7 @@
 
 #cvSkill(
   type: [Technologies],
-  info: [UNIX, Git, Docker, Node.js, React, Playwright, NGINX, MySQL, GitLab CI, GitHub Actions, REST, JIRA],
+  info: [UNIX, Git, Docker, Node.js, React, Playwright, NGINX, MySQL, GitLab CI/CD, GitHub Actions, REST, JIRA],
 )
 
 #cvSkill(

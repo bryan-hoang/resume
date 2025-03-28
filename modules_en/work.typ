@@ -18,8 +18,8 @@
     [Implemented E2E browser tests for the SPA dashboard, preventing regressions],
     [Improved the integration of the dashboard SPA with a OAuth 2.0 Ruby on Rails server],
     [Improved the build times for multiple web apps to be 100%-200% faster by switching to better tools (e.g., Vite)],
-    [Fixed issues with GitLab CI pipelines, preventing days of developer time from being wasted by flaky pipelines],
-    [Created custom Docker images used in GitLab CI pipelines to speed them up, improving the team's velocity],
+    [Fixed issues with GitLab CI/CD pipelines, preventing days of developer time from being wasted by flaky pipelines],
+    [Created custom Docker images used in GitLab CI/CD pipelines to speed them up, improving the team's velocity],
   ),
 )
 

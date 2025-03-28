@@ -9,10 +9,7 @@
   }
 }
 
-#show: cv.with(
-  metadata,
-)
-
+#show: cv.with(metadata)
 #show link: underline
 
 #importModules((
