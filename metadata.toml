@@ -1,0 +1,68 @@
+#:schema https://raw.githubusercontent.com/yunanwg/brilliant-CV/main/metadata.toml.schema.json
+
+# Set the output language
+# INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
+language = "en"
+
+[layout]
+# Optional values: skyblue, red, nephritis, concrete, darknight
+# You can also use a custom color by hex code i.e. "#1E90FF"
+awesome_color = "darknight"
+
+# Skips are for controlling the spacing between sections and entries
+before_entry_description_skip = "-4pt"
+before_entry_skip = "0pt"
+before_section_skip = "0pt"
+
+# Optional: sets paper size and margins. Possible values: a4 (default), us-letter
+paper_size = "us-letter"
+
+# Optional: sets the width of the right column of a cvEntry. If not set, values known to work well are used
+date_width = "2.8cm"
+
+[layout.fonts]
+header_font = "Roboto"
+regular_fonts = ["Source Sans 3"]
+
+[layout.header]
+# Optional values: left, center, right
+header_align = "left"
+
+# Decide if you want to display profile photo or not
+display_profile_photo = false
+info_font_size = "10pt"
+
+[layout.entry]
+# Decide if you want to put your company in bold or your position in bold
+display_entry_society_first = false
+
+# Decide if you want to display organisation logo or not
+display_logo = false
+
+[inject]
+# Decide if you want to inject AI prompt or not
+inject_ai_prompt = false
+
+# Decide if you want to inject keywords or not
+inject_keywords = false
+injected_keywords_list = ["Data Analyst", "GCP", "Python", "SQL", "Tableau"]
+
+[personal]
+first_name = "Bryan"
+last_name = "Hoang"
+
+# The order of this section will affect how the entries are displayed
+# The custom value is for any additional information you want to add, name it as custom-1, custom-2, etc.
+[personal.info]
+email = "bryan@bryanhoang.dev"
+phone = "+1 613-583-3497"
+linkedin = "bryan-c-hoang"
+github = "bryan-hoang"
+# gitlab = "bryan-hoang"
+homepage = "bryanhoang.dev"
+
+# each section must contains the following fields
+[lang.en]
+cv_footer = "Resume"
+header_quote = "Experienced Software Developer"
+letter_footer = ""
