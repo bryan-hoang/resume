@@ -4,7 +4,7 @@
 #let cvSection = cvSection.with(metadata: metadata)
 #let cvEntry = cvEntry.with(metadata: metadata)
 
-#v(-10pt)
+#v(-8pt)
 
 #cvSection("Work Experience")
 

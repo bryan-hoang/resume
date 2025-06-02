@@ -7,3 +7,6 @@
 # End of https://www.toptal.com/developers/gitignore/api/dotenv
 
 *.pdf
+
+# Avoid committing personal info of references.
+modules_en/references.typ

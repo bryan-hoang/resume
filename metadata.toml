@@ -45,7 +45,15 @@ inject_ai_prompt = false
 
 # Decide if you want to inject keywords or not
 inject_keywords = false
-injected_keywords_list = ["Data Analyst", "GCP", "Python", "SQL", "Tableau"]
+injected_keywords_list = [
+	"Software Developer",
+	"JavsScript",
+	"TypeScript",
+	"Python",
+	"SQL",
+	"Git",
+	"GitLab",
+]
 
 [personal]
 first_name = "Bryan"
@@ -55,14 +63,14 @@ last_name = "Hoang"
 # The custom value is for any additional information you want to add, name it as custom-1, custom-2, etc.
 [personal.info]
 email = "bryan@bryanhoang.dev"
-github = "bryan-hoang"
-linkedin = "bryan-c-hoang"
-phone = "+1 613-583-3497"
-# gitlab = "bryan-hoang"
+phone = "(613) 583-3497"
 homepage = "bryanhoang.dev"
+github = "bryan-hoang"
+# gitlab = "bryan-hoang"
+linkedin = "bryan-c-hoang"
 
 # each section must contains the following fields
 [lang.en]
-cv_footer = "Resume"
+cv_footer = "Résumé"
 header_quote = "Experienced Software Developer"
 letter_footer = ""
