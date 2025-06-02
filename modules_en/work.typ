@@ -33,7 +33,7 @@
     [Managed and triaged issues on team's Kanban board to support agile development],
     [Lead a tiger team that was formed to quickly finish the delivery of a new React SPA dashboard],
     [Coordinated with engineering, design, and business teams to add i18n and branding support to the dashboard SPA in collaboration with a research team from Queen's University; concluded with a survey with 600+ users],
-    [Managed a project to add TypeScript type definitions to a JS SDK with a remote contractor in a Europe],
+    [Managed a project to add TypeScript type definitions to a JS SDK with a remote contractor in Europe],
     [Mentored and managed internship students],
     [Participated in a #link("https://www.h1solutions.ca/solutions")[Leader Development Workshop]],
   ),
@@ -45,7 +45,7 @@
   date: [May 2020 - Aug. 2021],
   location: [Kingston, ON],
   description: list(
-    [Helped migrate monolith to even-driven microservices architecture],
+    [Helped migrate monolith codebase to event-driven microservices architecture],
     [Developed and maintained #link("https://dcp.work")[a React SPA] used by the business team in demos to clients and investors],
     [Developed and maintained #link("https://docs.dcp.dev")[a Sphinx documentation website] for the company's software tools],
     [Added stored procedure support to in-house relational database ORM library, avoiding bugs from repeating currency transaction code],
