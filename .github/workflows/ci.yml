@@ -19,7 +19,7 @@ jobs:
         run: |
           touch .env
           typst compile resume.typ
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         with:
           name: resume
           path: resume.pdf
