@@ -1,12 +1,12 @@
-#import "../requirements.typ": cvSection, cvEntry
+#import "../requirements.typ": cv-section, cv-entry
 
 #let metadata = toml("../metadata.toml")
-#let cvSection = cvSection.with(metadata: metadata)
-#let cvEntry = cvEntry.with(metadata: metadata)
+#let cv-section = cv-section.with(metadata: metadata)
+#let cv-entry = cv-entry.with(metadata: metadata)
 
-#cvSection("Projects")
+#cv-section("Projects")
 
-#cvEntry(
+#cv-entry(
   title: [Advent of Code CLI],
   society: link("https://github.com/bryan-hoang/aoc-cli-node")[aoc-cli-node],
   date: [Dec. 2024],

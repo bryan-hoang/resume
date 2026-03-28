@@ -39,21 +39,13 @@ display_entry_society_first = false
 # Decide if you want to display organisation logo or not
 display_logo = false
 
+[layout.footer]
+display_page_counter = false
+
 [inject]
 # Decide if you want to inject AI prompt or not
-inject_ai_prompt = false
-
-# Decide if you want to inject keywords or not
-inject_keywords = false
-injected_keywords_list = [
-	"Software Developer",
-	"JavsScript",
-	"TypeScript",
-	"Python",
-	"SQL",
-	"Git",
-	"GitLab",
-]
+custom_ai_prompt_text = ""
+injected_keywords_list = []
 
 [personal]
 first_name = "Bryan"
@@ -63,9 +55,9 @@ last_name = "Hoang"
 # The custom value is for any additional information you want to add, name it as custom-1, custom-2, etc.
 [personal.info]
 email = "bryan@bryanhoang.dev"
-phone = "(613) 583-3497"
-homepage = "bryanhoang.dev"
 github = "bryan-hoang"
+homepage = "bryanhoang.dev"
+phone = "(613) 583-3497"
 # gitlab = "bryan-hoang"
 linkedin = "bryan-c-hoang"
 

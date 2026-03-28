@@ -1,14 +1,14 @@
-#import "../requirements.typ": cvSection, cvEntry
+#import "../requirements.typ": cv-section, cv-entry
 
 #let metadata = toml("../metadata.toml")
-#let cvSection = cvSection.with(metadata: metadata)
-#let cvEntry = cvEntry.with(metadata: metadata)
+#let cv-section = cv-section.with(metadata: metadata)
+#let cv-entry = cv-entry.with(metadata: metadata)
 
 #v(-8pt)
 
-#cvSection("Work Experience")
+#cv-section("Work Experience")
 
-#cvEntry(
+#cv-entry(
   title: [Software Developer II],
   society: link("https://distributive.network")[Distributive],
   date: [May 2023 - Sep. 2024],
@@ -23,7 +23,7 @@
   ),
 )
 
-#cvEntry(
+#cv-entry(
   title: [Technical Lead],
   society: link("https://distributive.network")[Distributive],
   date: [May 2022 - May 2023],
@@ -39,7 +39,7 @@
   ),
 )
 
-#cvEntry(
+#cv-entry(
   title: [Software Developer I],
   society: link("https://distributive.network")[Distributive],
   date: [May 2020 - Aug. 2021],
@@ -53,7 +53,7 @@
   ),
 )
 
-#cvEntry(
+#cv-entry(
   title: [Software Developer Intern],
   society: link("https://distributive.network")[Distributive],
   date: [Jun. 2019 - Aug. 2019],
