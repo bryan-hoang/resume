@@ -16,7 +16,7 @@ Steps:
 ```console
 git clone https://github.com/bryan-hoang/resume.git
 cd resume
-typst compile resume.typ
+typst compile --font-path ./fonts resume.typ
 ```
 
 ## Usage
