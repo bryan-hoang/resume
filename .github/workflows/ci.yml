@@ -11,15 +11,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: typst-community/setup-typst@v5
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+      - uses: typst-community/setup-typst@63ac138db421d586de61f7f5ac3bcef6a2e6c78c # v5
         with:
           cache-dependency-path: requirements.typ
       - name: Compile resume
         run: |
           touch .env
           typst compile --font-path ./fonts resume.typ
-      - uses: actions/upload-artifact@v7
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: resume
           path: resume.pdf
