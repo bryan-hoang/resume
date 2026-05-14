@@ -1,1 +1,1 @@
-#import "@preview/brilliant-cv:3.3.0": *
+#import "@preview/brilliant-cv:4.0.1": *

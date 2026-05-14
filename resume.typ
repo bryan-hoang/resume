@@ -1,10 +1,11 @@
 #import "requirements.typ": cv
 
-#let metadata = toml("./metadata.toml")
-#let importModules(modules, lang: metadata.language) = {
+#let profile = sys.inputs.at("profile", default: "en")
+#let metadata = toml("./profile_" + profile + "/metadata.toml")
+#let importModules(modules, profile: profile) = {
   for module in modules {
     include {
-      "modules_" + lang + "/" + module + ".typ"
+      "profile_" + profile + "/" + module + ".typ"
     }
   }
 }

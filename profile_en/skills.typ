@@ -1,6 +1,6 @@
 #import "../requirements.typ": cv-section, cv-skill, h-bar
 
-#let metadata = toml("../metadata.toml")
+#let metadata = toml("./metadata.toml")
 #let cv-section = cv-section.with(metadata: metadata)
 
 #cv-section("Skills")

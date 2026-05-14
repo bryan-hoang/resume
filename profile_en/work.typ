@@ -1,10 +1,8 @@
 #import "../requirements.typ": cv-section, cv-entry
 
-#let metadata = toml("../metadata.toml")
+#let metadata = toml("./metadata.toml")
 #let cv-section = cv-section.with(metadata: metadata)
 #let cv-entry = cv-entry.with(metadata: metadata)
-
-#v(-8pt)
 
 #cv-section("Work Experience")
 
