@@ -1,16 +1,15 @@
 #:schema https://raw.githubusercontent.com/yunanwg/brilliant-CV/main/metadata.toml.schema.json
 
-# Set the output language
-# INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
-language = "en"
+cv_footer = "Résumé"
+header_quote = "Experienced Software Developer"
+letter_footer = ""
 
 [layout]
-# Optional values: skyblue, red, nephritis, concrete, darknight
 # You can also use a custom color by hex code i.e. "#1E90FF"
 awesome_color = "darknight"
 
 # Skips are for controlling the spacing between sections and entries
-before_entry_description_skip = "-4pt"
+before_entry_description_skip = "0pt"
 before_entry_skip = "0pt"
 before_section_skip = "0pt"
 
@@ -42,11 +41,6 @@ display_logo = false
 [layout.footer]
 display_page_counter = false
 
-[inject]
-# Decide if you want to inject AI prompt or not
-custom_ai_prompt_text = ""
-injected_keywords_list = []
-
 [personal]
 first_name = "Bryan"
 last_name = "Hoang"
@@ -60,9 +54,3 @@ homepage = "bryanhoang.dev"
 phone = "(613) 583-3497"
 # gitlab = "bryan-hoang"
 linkedin = "bryan-c-hoang"
-
-# each section must contains the following fields
-[lang.en]
-cv_footer = "Résumé"
-header_quote = "Experienced Software Developer"
-letter_footer = ""
